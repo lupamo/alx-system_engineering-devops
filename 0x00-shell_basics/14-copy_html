@@ -1,2 +1,2 @@
 #!/bin/bash
-cp /file_?.html /
+find /0x00-shell_basics -type f -name "*.html" -not -path "/*.html" -exec cp {} / \;
