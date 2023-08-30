@@ -1,2 +1,2 @@
 #!/bin/bash
-find / -type f -name "*.html" -not -path "/*.html" -exec cp {} / \;
+cp un *.html ../
