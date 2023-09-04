@@ -1,2 +1,2 @@
 #!/bin/bash
-sort -u
+sort -u file_1.txt | tr '\n' ' '
