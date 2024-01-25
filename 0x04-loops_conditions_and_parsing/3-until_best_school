@@ -1,11 +1,10 @@
 #!/usr/bin/env bash
 # This script is displaying "Best School" 10 times using
-# while loop
+# until loop
 
 num=1
-while [ "$num" -le 10 ]
-do
+
+until [ "$num" -gt 10 ]; do
 	echo "Best School"
 	((num++))
-
 done
