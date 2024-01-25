@@ -6,6 +6,8 @@ count=1
 while [ "$count" -le 10 ]; do
 	if [ "$count" -eq 9 ]
 	then
+		echo "Best School"
+		sleep 0.5
 		echo "Hi"
 	else
 		echo "Best School"
