@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times using
+# whille loop and case
+
+choice=1
+while [ "$choice" -le 20 ]; do
+	case $choice in
+		4)
+		echo "bad luck from China";;
+		9)
+		echo "bad luck from Japan";;
+		17)
+		echo "bad luck from Italy";;
+		*)
+		echo "$choice";;
+	esac
+	((choice++))
+done
