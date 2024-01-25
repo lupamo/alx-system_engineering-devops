@@ -2,6 +2,7 @@
 # This script is displaying "Best School" 10 times
 
 schools=("Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School" "Best School")
+
 for i in "${schools[@]}"; do
 	echo "$i"
 done
