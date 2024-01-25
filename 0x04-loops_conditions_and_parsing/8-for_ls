@@ -4,5 +4,6 @@
 
 fs="$(ls)"
 for i in $fs; do
-	echo "$i"
+	part_after_dash=$(echo "$i" | cut -d'-' -f2)
+    echo "$part_after_dash"
 done
