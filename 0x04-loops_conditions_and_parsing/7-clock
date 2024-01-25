@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times using
+# whille loop and if statement and &&
+
+hour=0
+
+while [ "$hour" -le 12 ]; do
+	printf "Hour: %d\n" $hour
+	mins=1
+	while [ "$mins" -lt 60 ]; do
+		printf "%d\n" $mins
+		((mins++))
+	done
+	((hour++))
+done
