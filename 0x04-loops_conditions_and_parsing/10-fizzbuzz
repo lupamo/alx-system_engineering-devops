@@ -2,7 +2,7 @@
 #fizzbuzz
 
 count=1
-while [ "$count" -le 20 ]; do
+while [ "$count" -le 100 ]; do
 	if [ $((count % 3)) -eq 0 ] && [ $((count % 5)) -eq 0 ]; then
 		echo "FizzBuzz"
 	elif [ $((count % 3)) -eq 0 ]; then
