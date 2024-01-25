@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+
+schools=("Best school" "Best school" "Best school" "Best school" "Best school" "Best school" "Best school" "Best school" "Best school" "Best school")
+for i in "${schools[@]}"; do
+	echo "$i"
+done
