@@ -7,11 +7,11 @@ in this project I'll be learning how to loop and use conditions in bash
 
 ## Read or watch
 
-[Loops sample][1]
-[Variable assignment and arithmetic][2]
-[Comparison operators][3]
-[File test operators][4]
-[Make your scripts portable][5]
+- [Loops sample][1]
+- [Variable assignment and arithmetic][2]
+- [Comparison operators][3]
+- [File test operators][4]
+- [Make your scripts portable][5]
 
 [1]: https://intranet.alxswe.com/rltoken/wT98UJfv_E2tk4yP9PcLLw
 [2]: https://intranet.alxswe.com/rltoken/olvOKX699pq50rkHRE5cSA
