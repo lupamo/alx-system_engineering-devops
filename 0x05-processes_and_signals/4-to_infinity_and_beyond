@@ -3,6 +3,7 @@
 
 count=1
 while [ "$count" -le 1 ]; do
-	sleep 2
 	echo "To infinity and beyond"
+	sleep 2
+
 done
