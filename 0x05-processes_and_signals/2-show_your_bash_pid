@@ -2,4 +2,4 @@
 #printing list of bash processes printed
 # shellcheck disable=SC2009
 
-ps -faux | grep -v '\.bash$'
+ps -faux | grep bash
