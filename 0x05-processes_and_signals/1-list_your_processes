@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-#printing list of processes
+#printing list of processes printed
 
 ps -eo user,pid,%cpu,%mem,vsz,rss,tty,stat,time,comm
