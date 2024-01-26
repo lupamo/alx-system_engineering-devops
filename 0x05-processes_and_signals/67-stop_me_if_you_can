@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#killing to infinity and beyond process another way
+
+pkill -f "7-highlander"

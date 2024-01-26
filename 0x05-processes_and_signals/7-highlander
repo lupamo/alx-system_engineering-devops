@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#printing to infinity and beyond and
+#I am invincible when terminated
+
+cleanup() {
+	echo "I am invincible!!!"
+	exit 0
+}
+
+trap cleanup SIGTERM
+
+count=1
+while [ "$count" -le 1 ]; do
+	echo "To infinity and beyond"
+	sleep 2
+
+done
