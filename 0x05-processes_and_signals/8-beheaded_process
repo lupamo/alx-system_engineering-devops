@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#killing to infinity
+
+pid="7-highlander"
+
+pkill -f "$pid"
