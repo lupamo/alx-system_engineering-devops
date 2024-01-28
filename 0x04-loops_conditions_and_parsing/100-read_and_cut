@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#reading folder etc/passwd and displaying it
+
+file_dis=":/etc/passwd"
+
+while IFS=":" read -r username _ uid _ _ _ homedir _ ;do
+	echo "Username: $username"
+	echo "User ID: $uid"
+	echo "Home Directory $homedir"
+	echo ""
+done < "$file_dis"
