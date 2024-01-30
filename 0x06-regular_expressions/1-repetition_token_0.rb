@@ -2,7 +2,7 @@
 #repetition token
 
 arg = ARGV[0]
-t_repeat = /(hbtt){2,4}n/
+t_repeat = /hbt{2,5}n/
 
 matches = arg.scan(t_repeat)
 matches.each { |match| print match }
