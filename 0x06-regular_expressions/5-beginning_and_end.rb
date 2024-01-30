@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
-#the string should only contain t and b in the middle
+#not accepting strings starting h and ending with n
 
 arg = ARGV[0]
-repeat = /\bh(?:t|b)+n\b/
+repeat = /^h.n$/
 
 matches = arg.scan(repeat)
 matches.each { |match| print match }
