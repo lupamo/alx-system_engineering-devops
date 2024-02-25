@@ -10,3 +10,10 @@ specifics about this infrastructure
 - What is the role of the application server: Is a program that runs application files, it provides security, scalability, management of resources and easy deployment.
 - What is the role of the database: a data base is a software that allows website manage, retrieve, update or change files, information logs and other forms of digital data.
 - What is the server using to communicate with the computer of the user requesting the website: using Hypertext Transfer Protocol (HTTP).
+
+The issues are with this infrastructure:
+----------------------------------------
+
+A single Point of Failure (SPOF) is a part of a system: Since we have one server if our server goes down or one of it's function files our whole website will go down.
+Downtime when maintenance needed (like deploying new code web server needs to be restarted): if  we want to add more code our website will go down since we are using one server.
+Cannot scale if too much incoming traffic: No loadBalancer and a single server means too much traffic will lead to poor perfomance of our website
