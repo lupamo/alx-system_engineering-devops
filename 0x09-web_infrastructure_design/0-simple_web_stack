@@ -1,3 +1,12 @@
 https://imgur.com/a/TWHTDpR
 
-## specifics about this infrastructure
+specifics about this infrastructure
+-------------------------------------
+
+- What is a server: A server is a computer that sends and recives data from a user client through the internet
+- What is the role of the domain name: A domain name is a unique human readable string used to access a website
+- What type of DNS record www is in www.foobar.com: From the infrastructure I've drawn the DNS record is an A type since it maps the domain name directly to the ip address.
+- What is the role of the web server: The role of web server is to serve static content to the user client
+- What is the role of the application server: Is a program that runs application files, it provides security, scalability, management of resources and easy deployment.
+- What is the role of the database: a data base is a software that allows website manage, retrieve, update or change files, information logs and other forms of digital data.
+- What is the server using to communicate with the computer of the user requesting the website: using Hypertext Transfer Protocol (HTTP).
