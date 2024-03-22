@@ -1,7 +1,7 @@
 # puppet file creating a school file in tmp folder
 
 file {'/tmp/school':
-  ensure    =>   'present',
+  ensure  =>   'present',
   mode    =>   '0744',
   owner   =>   'www-data',
   group   =>   'www-data',
