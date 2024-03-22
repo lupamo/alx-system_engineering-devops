@@ -1,3 +1,4 @@
+puppet file creating a school file in tmp folder 
 file {'/tmp/school':
   sure    =>   'present',
   mode    =>   '0744',
