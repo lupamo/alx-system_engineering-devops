@@ -1,0 +1,4 @@
+528069-web-01
+User ubuntu
+IdentifyFile ~/.ssh/school
+PasswordAuthentication no
