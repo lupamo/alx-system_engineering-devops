@@ -1,16 +1,22 @@
 #!/usr/bin/env bash
-#updating packeges
+#updating packages
 sudo apt-get update
 
 #install Nginx
 sudo apt-get install -y nginx
+
+#service start
 sudo service nginx start
 
 #allowing firewall
 sudo ufw allow 'Nginx HTTP'
 
+#editing permission of files
+sudo chown -R "$USER":"$USER" /var/www/html
+sudo chmod -R 755 /var/www
+
 #backup default
-cp cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
+cp /var/www/html/index.nginx-debian.html /var/www/html/index.nginx-debian.html.bckp
 
 #adding contents on the backup
 echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
@@ -18,15 +24,8 @@ echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 #creating a new server block config for redirection
 sudo sed -i '24i\       rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
 
-
-
-sudo chmod 644 /etc/nginx/sites-available/redirect_me.conf
-
 #new serverblock
 sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled/
-
-#Tesst the Nginx config
-sudo nginx -t
 
 #reloading Nginx
 sudo service nginx restart
