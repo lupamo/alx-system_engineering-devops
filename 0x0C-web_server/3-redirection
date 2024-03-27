@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 #updating packages
-sudo apt-get update
-
 #install Nginx
-sudo apt-get install -y nginx
+echo -e "Updating and installing Nginx.\n"
+sudo apt-get update -y -qq && \
+         sudo apt-get install nginx -y
 
 #service start
 sudo service nginx start
@@ -23,9 +23,6 @@ echo -e "Hello World!" > /var/www/html/index.nginx-debian.html
 
 #creating a new server block config for redirection
 sudo sed -i '24i\       rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;' /etc/nginx/sites-available/default
-
-#new serverblock
-sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled/
 
 #reloading Nginx
 sudo service nginx restart
