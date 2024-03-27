@@ -6,19 +6,22 @@ sudo apt-get update
 sudo apt-get install -y nginx
 
 #creating a new server block config for redirection
-
-cat <<EOF | sudo tee /etc/nginx/sites-available/redirect_me.conf
+sudo bash -c 'cat <<EOF > /etc/nginx/sites-available/redirect_me.conf
 server {
     listen 80;
     server_name 100.25.190.224;
 
-    location /redirect_me/ {
+    location /redirect_me {
         return 301 https://www.youtube.com/watch?v=QH2-TGUlwu4;
     }
 }
-EOF
-#new serverblock
-sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled
+EOF'
 
+#new serverblock
+sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled/
+
+#Tesst the Nginx config
 sudo nginx -t
+
+#reloading Nginx
 sudo systemctl reload nginx
