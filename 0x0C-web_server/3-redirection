@@ -20,6 +20,9 @@ EOF'
 #new serverblock
 sudo ln -s /etc/nginx/sites-available/redirect_me.conf /etc/nginx/sites-enabled/
 
+#remove the default Nginx server block
+sudo rm /etc/nginx/sites-enabled/default
+
 #Tesst the Nginx config
 sudo nginx -t
 
