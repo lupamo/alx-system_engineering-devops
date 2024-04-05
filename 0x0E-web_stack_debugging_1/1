@@ -1,4 +1,0 @@
-nginx: [emerg] open() "/etc/nginx/sites-enabled/web_static" failed (2: No such file or directory) in /etc/nginx/nginx.conf:60
-nginx: configuration file /etc/nginx/nginx.conf test failed
-Job for nginx.service failed because the control process exited with error code.
-See "systemctl status nginx.service" and "journalctl -xeu nginx.service" for details.
