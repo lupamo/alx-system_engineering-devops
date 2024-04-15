@@ -1,0 +1,11 @@
+#set default policies to deny incoming and outgoing connections
+sudo ufw default deny incoming
+sudo ufw default allow outgoing
+
+#allowing the specific ports
+sudo ufw allow 22
+sudo ufw allow 443
+sudo ufw allow 80
+
+#enable ufw
+sudo ufw enable
