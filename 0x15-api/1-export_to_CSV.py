@@ -5,7 +5,6 @@ returns information about his/her TODO list progress.
 and exports it to a csv
 """
 
-import csv
 import requests
 from sys import argv
 
@@ -16,10 +15,10 @@ if __name__ == '__main__':
     url = f"{users_url}/{user_id}"
 
     with requests.get(url) as response:
-        user_name = response.json().get('name')
         # extracting employee name using json
+        user_name = response.json().get('username')
 
-    todos = f"{url}/todos"  # getting todos url
+        todos = f"{url}/todos"  # getting todos url
 
     with requests.get(todos) as response:
         tasks = response.json()
