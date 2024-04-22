@@ -20,16 +20,17 @@ if __name__ == '__main__':
         user_name = response.json().get('username')
 
         todos = f"{url}/todos"  # getting todos url
-        
+
     with requests.get(todos) as response:
         tasks = response.json()
 
-    dic  = {user_id: []}
+    dic = {user_id: []}
+    
     for t in tasks:
         dic[user_id].append({
             "task": t.get('title'),
             "completed": t.get('completed'),
             "username": user_name
-		})
+        })
     with open('{}.json'.format(user_id), 'w') as file:
         json.dump(dic, file, indent=4)
