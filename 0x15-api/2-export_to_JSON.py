@@ -19,13 +19,13 @@ if __name__ == '__main__':
         # extracting employee name using json
         user_name = response.json().get('username')
 
-        todos = f"{url}/todos"  # getting todos url
+    todos = f"{url}/todos"  # getting todos url
 
     with requests.get(todos) as response:
         tasks = response.json()
 
     dic = {user_id: []}
-    
+
     for t in tasks:
         dic[user_id].append({
             "task": t.get('title'),
