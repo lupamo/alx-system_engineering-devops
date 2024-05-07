@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Module to test the Reddit API"""
+"""Reddit api module call"""
 import requests
 
 
