@@ -9,7 +9,7 @@ def number_of_subscribers(subreddit):
     reddit subscribers
     """
 
-    if subreddit is not isinstance(subreddit, str):
+    if subreddit is None or not isinstance(subreddit, str):
         return 0
 
     headers = {'User-Agent': 'VICTORY'}
