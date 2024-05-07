@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Reddit api module call"""
+"""Module to test the Reddit API"""
 import requests
 
 
@@ -9,7 +9,7 @@ def top_ten(subreddit):
     of the first ten host for a given subreddit
     """
     headers = {'User-Agent': 'VICTORY'}
-    url =f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
+    url = f"https://www.reddit.com/r/{subreddit}/hot.json?limit=10"
     response = requests.get(url, headers=headers, allow_redirects=False)
 
     if response.status_code == 200:
